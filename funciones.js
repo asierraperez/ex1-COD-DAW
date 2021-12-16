@@ -4,7 +4,9 @@ function c(d) {
 }
 
 
-var df = [60, 32, 100]; var dc = []; var contador;
+var df = [60, 32, 100];
+var dc = [];
+var contador;
 
 
 
@@ -20,7 +22,9 @@ function b() {
 }
 
 function a() {
-    for (contador = 0; contador <= 2; contador++) { dc[contador] = c(df[contador]); }
+    for (contador = 0; contador <= 2; contador++) {
+        dc[contador] = c(df[contador]);
+    }
 }
 
 function fc(aux) {
