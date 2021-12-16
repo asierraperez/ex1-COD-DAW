@@ -1,37 +1,37 @@
-function c(d) {
-    var c = 5 / 9 * (d - 32);
-    return c;
+function calculo_temperatura(farenheit) {
+    var centigrados = 5 / 9 * (farenheit - 32);
+    return centigrados;
 }
 
 
-var df = [60, 32, 100];
-var dc = [];
+var grados_farenheit = [60, 32, 100];
+var grados_centigrados = [];
 var contador;
 
 
 
-function b() {
+function salida() {
     for (contador = 2; contador >= 0; contador--) {
-        document.write("Valor " + contador + " es " + df[contador] + " F ");
+        document.write("Valor " + contador + " es " + grados_farenheit[contador] + " F ");
 
-        document.write(" el cual es " + dc[contador] +
+        document.write(" el cual es " + grados_centigrados[contador] +
             " C");
 
-        fc(dc[contador])
+        temperatura(grados_centigrados[contador])
     }
 }
 
-function a() {
+function centigrados() {
     for (contador = 0; contador <= 2; contador++) {
-        dc[contador] = c(df[contador]);
+        grados_centigrados[contador] = calculo_temperatura(grados_farenheit[contador]);
     }
 }
 
-function fc(aux) {
-    if (aux > 25) {
+function temperatura(aux_centigrados) {
+    if (aux_centigrados > 25) {
         document.write(" Hace calor <br />");
     } else
-        if (aux < 15) {
+        if (aux_centigrados < 15) {
             document.write(" Hace frio <br />");
         } else {
             document.write(" Ni fu ni fa <br />")

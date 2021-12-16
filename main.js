@@ -1,3 +1,3 @@
-function __main__() { a(); b(); }
+function __main__() { centigrados(); salida(); }
 
 __main__();
